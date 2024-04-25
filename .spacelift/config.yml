@@ -1,10 +1,10 @@
 # The version of the configuration file format
 version: 1
 # Your module version - must be changed to release a new version
-module_version: 0.1.4
+module_version: 0.1.5
 
 test_defaults:
-  before_init: ["tofu test"]
+  before_init: ["tofu init && tofu test"]
 
 # The set of tests to run to verify your module works correctly
 tests:
