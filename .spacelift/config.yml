@@ -2,3 +2,10 @@
 version: 1
 # Your module version - must be changed to release a new version
 module_version: 0.1.1
+
+# The set of tests to run to verify your module works correctly
+tests:
+  - name: Test the module with 1.5.7
+    terraform_version: 1.5.7
+    environment:
+      TF_VAR_bacon: tasty
