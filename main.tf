@@ -7,13 +7,18 @@ terraform {
   }
 }
 
+variable "length" {
+  default = 16
+  description = "Length of a secret"
+}
+
 resource "random_password" "password" {
-  length           = 16
+  length           = var.length
   special          = true
   override_special = "!#$%&*()-_=+[]{}<>:?"
 }
 
-output "name" {
+output "password" {
   value = random_password.password.result
   sensitive = true
 }
