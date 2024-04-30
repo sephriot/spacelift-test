@@ -6,7 +6,7 @@ terraform {
     }
   }
 }
-
+fail to parse
 variable "length" {
   default = 20
   type = number
