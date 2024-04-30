@@ -8,7 +8,7 @@ terraform {
 }
 
 variable "length" {
-  default = 16
+  default = 17
   type = number
   description = "Length of a secret"
 }
