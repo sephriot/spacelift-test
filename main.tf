@@ -6,8 +6,9 @@ terraform {
     }
   }
 }
-fail to parse
+
 variable "length" {
+  "fail to parse" = "asdasd"
   default = 20
   type = number
   description = "Length of a secret"
